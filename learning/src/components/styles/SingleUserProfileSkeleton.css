@@ -1,0 +1,105 @@
+.skeleton-profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Banner */
+.skeleton-banner {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  background: #e2e2e2;
+}
+
+/* Profile section */
+.skeleton-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.skeleton-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #d8d8d8;
+}
+
+.skeleton-text-group {
+  flex: 1;
+}
+
+.skeleton-text {
+  height: 14px;
+  border-radius: 6px;
+  background: #d8d8d8;
+  margin-bottom: 10px;
+}
+
+.skeleton-text.name {
+  width: 150px;
+  height: 18px;
+}
+
+.skeleton-text.role {
+  width: 100px;
+}
+
+.skeleton-text.email {
+  width: 200px;
+}
+
+/* Bio section */
+.skeleton-bio {
+  margin-top: 20px;
+}
+
+.skeleton-text.bio-line {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 10px;
+  background: #d8d8d8;
+  border-radius: 6px;
+}
+
+/* Shimmer animation */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  animation: shimmerMove 1.5s infinite;
+}
+
+@keyframes shimmerMove {
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skeleton-profile-container {
+    padding: 10px;
+  }
+  .skeleton-avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .skeleton-banner {
+    height: 100px;
+  }
+}

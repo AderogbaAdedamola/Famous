@@ -1,0 +1,133 @@
+/* Container */
+.skeleton-form {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  padding-bottom: 80px;
+  box-shadow: 2px 2px 5px #dee0e2;
+  overflow: hidden;
+}
+
+/* Common Skeleton Elements */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background: #e2e5e7;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shimmerMove 1.5s infinite;
+}
+
+@keyframes shimmerMove {
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+/* Photo Section */
+.your-photo-container {
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.img-container>.your-photo-container{
+    width: 150px;
+}
+.skeleton-title {
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.skeleton-subtext {
+  width: 180px;
+  height: 14px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.skeleton-line {
+  height: 14px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
+
+/* Buttons */
+.skeleton-btn {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.skeleton-btn.small {
+  width: 100px;
+  height: 35px;
+}
+
+/* Info Section */
+.skeleton-label {
+  width: 100px;
+  height: 14px;
+  border-radius: 5px;
+  margin: 20px 10px 10px;
+}
+
+.skeleton-input {
+  width: 95%;
+  height: 40px;
+  border-radius: 6px;
+  margin: 0 10px 20px;
+}
+
+.skeleton-textarea {
+  width: 95%;
+  height: 100px;
+  border-radius: 6px;
+  margin: 0 10px 20px;
+}
+
+/* Footer */
+.skeleton-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #f6f7f8;
+  border-top: 2px solid #eaedf0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  gap: 15px;
+  padding-right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .img-info-container {
+    flex-direction: column;
+  }
+
+  .your-photo-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skeleton-btn {
+    max-width: 100%;
+  }
+}

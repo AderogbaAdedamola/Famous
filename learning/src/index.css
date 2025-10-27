@@ -1,0 +1,441 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f7f8;
+  padding-top: 60px;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  gap: 5px;
+  background-color: white;
+  box-shadow: 0 0 15px hsla(180, 2%, 37%, 0.63);
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 501;
+}
+.header-item1{
+  margin-left: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  gap: 5px;
+}
+.profile-container{
+  width: 230px;
+  height: 350px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+}
+.image-container{
+  width: 100%;
+  height: 200px;
+}
+.image-container>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.userInfo-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.userInfo-container .short-bio{
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 14px;
+  display: -webkit-box;         
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 3;         
+  overflow: hidden;              
+  text-overflow: ellipsis;  
+  margin-top: 5px;    
+}
+nav.side-nav{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+  height: 100dvh;
+  z-index: 990;
+  overflow: hidden;
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 500px) {
+  nav.side-nav{
+    width: 100%;
+  }
+}
+nav.side-nav .search{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+/* for Header */
+
+/* Heder Ends */
+.search .nav-input{
+  width: 85%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.search .search-button{
+  border: none;
+  background: transparent;
+  width: 10%;
+  cursor: pointer;
+}
+ .nav-ul{
+  margin-top: 30px;
+  list-style: none;
+  width: 100%;
+}
+.nav-ul>li{
+  width: 100%;
+  height: 40px;
+  font-family: inter;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border-top: 1px solid black;
+}
+.nav-ul>li:last-child{
+  border-bottom: 1px solid black;
+}
+.nav-ul>li:hover{
+  background-color: rgb(199, 214, 228);;
+}
+.nav-ul>li>img{
+  width: 20px;
+  height: 20px;
+}
+.close-button{
+  margin: 10px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.close-button:hover{
+  background-color: rgb(230, 241, 251);
+  border: 1px solid black;
+}
+nav.header-item2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+}
+nav.header-item2>ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+}
+nav.header-item2>ul>li{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: auto 5px;
+  border: none;
+  cursor: pointer;
+}
+nav.header-item2>ul>li:hover{
+  background-color: rgb(199, 214, 228);
+}
+.header-search-container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+form.header-search{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-search input{
+  width: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+input{
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .header-search button{
+  border: none;
+  background: transparent;
+  width: 35px;
+  padding: 3px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.header-search button:hover{
+  background-color: rgb(199, 214, 228);
+} */
+.menu-icon{
+  margin-right: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu-icon>img{
+  width: 35px;
+}
+.menu-icon:hover{
+  border: 1px solid black;
+}
+@media (max-width: 768px) {
+  nav.header-item2 {
+    display: none; 
+  }
+
+  .menu-icon {
+    display: flex; 
+  }
+}
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100%;
+}
+.create-profile-container{
+  width: 100%;
+  min-height: 100%;
+  z-index: 500;
+}
+
+.craete-profile-header>span{
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: auto 20px;
+}
+.arrow-back-container{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.arrow-back-container:hover{
+  background-color: #eaedf0;
+}
+.create-profile-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.create-profile-form{
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  box-shadow: 2px 2px 5px #dee0e2;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+.img-info-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+.img-container {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.img-container p{
+  font-size: 0.95em;
+  color: #454648;
+  margin: 10px 0;
+}
+.img-container>div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.img-container>div>.your-photo-container{
+  width: 150px;
+  height: 150px;
+  border: 50%;
+  overflow: hidden;
+}
+.img-container>div>.your-photo-container>img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.img-container label{
+  padding: 10px;
+  background-color: #205cb1;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.005rem;
+  border: none;
+  margin: 5px 20px 20px;
+  width: 100%;
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-container button{
+  padding: 10px;
+  background-color: #1baea4;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.005rem;
+  border: none;
+  margin: 5px 20px 20px;
+  width: 100%;
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-container label:hover{
+  background-color: #3f3faf;
+}
+.img-container button:hover{
+  background-color: #228f87;
+}
+.info-container {
+  width: 66%;
+  padding-right: 20px;
+}
+
+.info-container label {
+  display: block;
+  margin: 30px 10px 10px ;
+}
+
+.info-container input,
+.info-container textarea {
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.05em;
+}
+.info-container textarea{
+  resize: vertical;
+  height: 110px;
+}
+.info-container textarea::placeholder{
+  font-size: 0.9em;
+}
+.save-button-container{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f6f7f8;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid #eaedf0;
+  gap: 15px;
+  padding-right: 20px;
+}
+.save-button-container #cancel{
+  padding: 10px 15px;
+  box-shadow:  1px 1px 3px #76787b;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.005rem;
+  cursor: pointer;
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.save-button-container #save{
+  padding: 10px 15px;
+  background-color: #205cb1;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.005rem;
+  border: none;
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.save-button-container #save:hover{
+  background-color: #3f3faf;
+}
+.save-button-container #cancel:hover{
+  background-color: #eaedf0;
+}
+@media (max-width: 768px) {
+  .create-profile-main{
+    padding: 20px;
+}
+  .img-info-container {
+    flex-direction: column;
+  }
+  .img-container{
+    width: 100%;
+  }
+  .info-container{
+    width: 100%;
+  }
+  .img-container button{
+   max-width: 500px ;
+}
+}

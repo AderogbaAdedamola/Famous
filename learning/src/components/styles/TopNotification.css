@@ -1,0 +1,96 @@
+.top-notification {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  min-width: 300px;
+  max-width: 90%;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.top-notification.show {
+  top: 20px;
+  opacity: 1;
+}
+
+.top-notification.hide {
+  top: -100px;
+  opacity: 0;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.notification-message {
+  flex: 1;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 12px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.notification-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Type Styles */
+.top-notification.info {
+  background-color: #2196F3;
+  color: white;
+}
+
+.top-notification.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.top-notification.warning {
+  background-color: #FF9800;
+  color: white;
+}
+
+.top-notification.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Optional: Add icons */
+.top-notification.info .notification-message::before {
+  content: "ℹ️ ";
+}
+
+.top-notification.success .notification-message::before {
+  content: "✅ ";
+}
+
+.top-notification.warning .notification-message::before {
+  content: "⚠️ ";
+}
+
+.top-notification.error .notification-message::before {
+  content: "❌ ";
+}

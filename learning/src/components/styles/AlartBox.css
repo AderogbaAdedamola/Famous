@@ -1,0 +1,69 @@
+.alart-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 180px;
+  background-color: white;
+  box-shadow: 0 0 10px #5a6570;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+}
+.alart-container>.alart-text-box{
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.95em;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.alart-container>.alart-button-container{
+  width: 100%;
+  height: 30%;
+  background-color: #f6f7f8;
+  border-top: 2px solid #eaedf0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 20px;
+}
+.alart-button-container #cancel{
+  padding: 5px 10px;
+  box-shadow:  1px 1px 3px #76787b;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.005rem;
+  cursor: pointer;
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.alart-button-container #save{
+  padding: 5px 10px;
+  background-color: #205cb1;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.005rem;
+  border: none;
+  font-family: 'inter' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.alart-button-container #save:hover{
+  background-color: #3f3faf;
+}
+.alart-button-container #cancel:hover{
+  background-color: #eaedf0;
+}
+
