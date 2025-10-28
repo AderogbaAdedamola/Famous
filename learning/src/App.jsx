@@ -41,7 +41,7 @@ function App() {
         setData(result)
         setLoading(false)
       }
-      //console.log(result)
+      console.log(result)
       }
     loadProfiles()
     
