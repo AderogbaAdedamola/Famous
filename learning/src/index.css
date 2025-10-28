@@ -32,6 +32,11 @@ header{
   height: 50px;
   gap: 5px;
 }
+.header-item1>img{
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+}
 .profile-container{
   width: 230px;
   height: 350px;
