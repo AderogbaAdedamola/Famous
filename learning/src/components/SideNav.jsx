@@ -1,4 +1,6 @@
 import add from "../assets/add-dark.svg"
+import edit from "../assets/edit.png"
+import deleteLogo from "../assets/delete.png"
 import search from "../assets/search-dark.svg"
 import close from "../assets/close-dark.svg"
 import { useEffect, useRef, useState } from "react"
@@ -106,10 +108,10 @@ export default function SideNav(props){
                     {props.profileIsCreated  ? 
                     <>
                     <li onClick={() => openEditProfile()}> 
-                        <img src={add} alt="add logo" /> <span>Edit Your Profile</span>
+                        <img src={edit} alt="edit logo" /> <span>Edit Your Profile</span>
                     </li>
                     <li onClick={() => deleteProfile()}> 
-                        <img src={add} alt="add logo" /> <span>Delete your profile</span>
+                        <img src={deleteLogo} alt="delete logo" /> <span>Delete your profile</span>
                     </li>
                     </>:
                     <li onClick={displayProfileSettings}> 
