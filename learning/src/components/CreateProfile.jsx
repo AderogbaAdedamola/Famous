@@ -144,12 +144,12 @@ export default function CreateProfile(props){
     
         const formData = new FormData();
         formData.append("file", file);
-        formData.append("upload_preset", "famous_preset"); // set in Cloudinary
-        formData.append("cloud_name", "dqmbkxkri");
+        formData.append("upload_preset", import.meta.env.VITE_FAMOUS_PRESET); // set in Cloudinary
+        formData.append("cloud_name", import.meta.env.VITE_CLOUD_NAME);
     
         try {
           const res = await axios.post(
-            "https://api.cloudinary.com/v1_1/dqmbkxkri/image/upload",
+            import.meta.env.VITE_CLOUD_ENDPOINT,
             formData,
             {
               onUploadProgress: (progressEvent) => {
