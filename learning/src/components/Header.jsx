@@ -94,8 +94,9 @@ export default function Header(props){
                             list2={"Delete Your Profile"}
                             list2Function={() => deleteProfile()}/> :
                         <li onClick={displayProfileSettings}>
-                            <img src={addDark} alt="add" />
-                            <span>Add Your Profile</span>                  </li>}
+                          <img src={addDark} alt="add" />
+                          <span>Add Your Profile</span>
+                        </li> }
                         <li 
                             onClick={handleClick}
                             style={{
