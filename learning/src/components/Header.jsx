@@ -78,7 +78,7 @@ export default function Header(props){
             <header>
                 <div className="header-item1">
                     <img src={reactLogo} alt="logo" />
-                    <h2>Famous People</h2>
+                    <h2>Famous</h2>
                 </div>
                 <div className="menu-icon" onClick={openNav}>
                     <img src={menuDark} alt="Menu" />
