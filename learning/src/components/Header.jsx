@@ -1,4 +1,4 @@
-import famous from "../assets/famous.png"
+import reactLogo from "../assets/react.svg"
 import menuDark from "../assets/menu-dark.svg"
 import addDark from "../assets/add-dark.svg"
 import searchDark from "../assets/search-dark.svg"
@@ -77,7 +77,7 @@ export default function Header(props){
                         />}
             <header>
                 <div className="header-item1">
-                    <img src={famous} alt="logo" />
+                    <img src={reactLogo} alt="logo" />
                     <h2>Famous</h2>
                 </div>
                 <div className="menu-icon" onClick={openNav}>
@@ -94,9 +94,9 @@ export default function Header(props){
                             list2={"Delete Your Profile"}
                             list2Function={() => deleteProfile()}/> :
                         <li onClick={displayProfileSettings}>
-                          <img src={addDark} alt="add" />
-                          <span>Add Your Profile</span>
-                        </li> }
+                            <img src={addDark} alt="add" />
+                            <span>Add Your Profile</span>
+                        </li>}
                         <li 
                             onClick={handleClick}
                             style={{
