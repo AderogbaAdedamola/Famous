@@ -4,12 +4,17 @@ import arrowBack from "../assets/arrow-back.svg"
 import placeholder from "../assets/profile-placeholder.png"
 import SingleUserProfileSkeleton from "./SingleUserProfileSkeleton"
 
-const SingleUserProfile = ({ SingleUserData, setShowMainPage, setShowViewProfile, isUser, setIsUser }) => {
+const SingleUserProfile = ({ SingleUserData, setShowMainPage, setShowProfileSettings, setShowViewProfile, isUser, setIsUser }) => {
   
   function arrowBackAction() {
     setShowMainPage(true);
     setShowViewProfile(false);
     setIsUser(false)
+  }
+  function openEditProfile(){
+        props.setShowMainPage(false)
+        props.setShowViewProfile(false)
+        props.setShowProfileSettings(true)
   }
 
    if (!SingleUserData) {
@@ -52,7 +57,7 @@ const SingleUserProfile = ({ SingleUserData, setShowMainPage, setShowViewProfile
             {isUser &&
             <button 
                 className="edit-btn"
-                // onClick={editProfile}
+                onClick={() => openEditProfile()}                // onClick={editProfile}
             >
               ✏️ Edit Profile
             </button>}
