@@ -145,7 +145,6 @@ const otherProfilesElements =
           onUserSelect={onUserSelect}
         />}
         <main style={{height: loading && "90vh", overflow: loading && "hidden"}}>
-          <UserProfile />
           {loading ? <ProfileSkeleton /> : userProfilesElement}
           {loading ? <><ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /> <ProfileSkeleton /></> : otherProfilesElements}
         </main>
