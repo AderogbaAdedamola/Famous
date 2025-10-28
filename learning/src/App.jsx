@@ -174,6 +174,7 @@ const otherProfilesElements =
           setShowMainPage={setShowMainPage}
           setShowViewProfile={setShowViewProfile}
           isUser={isUser}
+          setShowProfileSettings={setShowProfileSettings}
           setIsUser={setIsUser}
         />
       )
