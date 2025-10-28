@@ -12,9 +12,9 @@ const SingleUserProfile = ({ SingleUserData, setShowMainPage, setShowProfileSett
     setIsUser(false)
   }
   function openEditProfile(){
-        props.setShowMainPage(false)
-        props.setShowViewProfile(false)
-        props.setShowProfileSettings(true)
+        setShowMainPage(false)
+        setShowViewProfile(false)
+        setShowProfileSettings(true)
   }
 
    if (!SingleUserData) {
