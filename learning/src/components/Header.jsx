@@ -1,4 +1,4 @@
-import famous from "../assets/famous.png"
+import famous from "../assets/famous2.png"
 import menuDark from "../assets/menu-dark.svg"
 import addDark from "../assets/add-dark.svg"
 import searchDark from "../assets/search-dark.svg"
