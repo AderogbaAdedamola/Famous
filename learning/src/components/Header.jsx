@@ -1,4 +1,4 @@
-import famous from "../assets/profile-placeholder.png"
+import famous from "../assets/famous.png"
 import menuDark from "../assets/menu-dark.svg"
 import addDark from "../assets/add-dark.svg"
 import searchDark from "../assets/search-dark.svg"
@@ -95,7 +95,7 @@ export default function Header(props){
                             list2Function={() => deleteProfile()}/> :
                         <li onClick={displayProfileSettings}>
                             <img src={addDark} alt="add" />
-                            <span>Add Your Profilefamous                  </li>}
+                            <span>Add Your Profile</span>                  </li>}
                         <li 
                             onClick={handleClick}
                             style={{
