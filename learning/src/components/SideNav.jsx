@@ -101,7 +101,7 @@ export default function SideNav(props){
                  <SuggestionBox nameQuery={query} onSelect={props.onUserSelect} isSearch={isSearch}/>}
                 </form>
                     
-                {isSearch &&
+                
                 <ul className="nav-ul">
                     {props.profileIsCreated  ? 
                     <>
@@ -115,7 +115,7 @@ export default function SideNav(props){
                     <li onClick={displayProfileSettings}> 
                         <img src={add} alt="add logo" /> <span>Add your profile</span>
                     </li>}
-                </ul>}
+                </ul>
             </nav>
         </>
     )
