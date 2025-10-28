@@ -1,4 +1,4 @@
-import reactLogo from "../assets/react.svg"
+import famous from "../assets/famous.png"
 import menuDark from "../assets/menu-dark.svg"
 import addDark from "../assets/add-dark.svg"
 import searchDark from "../assets/search-dark.svg"
@@ -77,7 +77,7 @@ export default function Header(props){
                         />}
             <header>
                 <div className="header-item1">
-                    <img src={reactLogo} alt="logo" />
+                    <img src={famous} alt="logo" />
                     <h2>Famous</h2>
                 </div>
                 <div className="menu-icon" onClick={openNav}>
