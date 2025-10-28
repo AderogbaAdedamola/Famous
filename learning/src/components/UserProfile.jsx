@@ -1,5 +1,5 @@
 import { useState } from "react";
-import reactLogo from "../assets/react.svg"
+import profilePlaceholder from "../assets/profile-placeholder.png"
 
 export default function UserProfile(props){
     const [userName, setUserName] = useState(props.userName || "User Name")
@@ -19,7 +19,7 @@ export default function UserProfile(props){
     return(
         <div className="profile-container" onClick={props.onClick}>
             <div className="image-container">
-                <img src={props.image || reactLogo} alt="profile picture" />
+                <img src={props.image || profilePlaceholder} alt="profile picture" />
             </div>
             <div className="userInfo-container">
                 <h2 className="user-name" >{userName}{userNameExceed && <span>...</span>}</h2>
