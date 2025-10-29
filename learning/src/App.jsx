@@ -10,14 +10,6 @@ import ProfileSkeleton from './components/ProfileSkeleton'
 import SingleUserProfile from './components/SingleUserProfile'
 
 function App() {
-  localStorage.setItem("profileCreated", true)
-  const user = {
-  name: "Adedamola",
-  user_id: 68fcdc06609ac0579b58
-};
-
-// Convert the object to a string before saving
-localStorage.setItem("user_local_data", JSON.stringify(user));
   const [showMainPage, setShowMainPage] = useState(true)
   const [showSideNav, setShowSideNav] = useState(false)
   const [showProfileSettings, setShowProfileSettings] = useState(false)
