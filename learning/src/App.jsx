@@ -11,7 +11,7 @@ import SingleUserProfile from './components/SingleUserProfile'
 
 function App() {
   localStorage.setItem("profileCreated", true)
-  localStorage.setItem("userData", JSON.stringify({ name: "Adedamola", user_id:68fcdc06609ac0579b58 }));
+  localStorage.setItem("user_local_data", JSON.stringify({ user_name: "Adedamola", user_id:68fcdc06609ac0579b58 }));
   const [showMainPage, setShowMainPage] = useState(true)
   const [showSideNav, setShowSideNav] = useState(false)
   const [showProfileSettings, setShowProfileSettings] = useState(false)
