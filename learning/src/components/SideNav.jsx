@@ -6,7 +6,7 @@ import close from "../assets/close-dark.svg"
 import { useEffect, useRef, useState } from "react"
 import AlartBox from "./AlartBox"
 import { deleteUserProfile } from "../deleteUserProfile"
-import { deleteAllOtherProfiles } from "../deleteAll"
+//import { deleteAllOtherProfiles } from "../deleteAll"
 import SuggestionBox from "./SuggestionBox"
 
 
@@ -51,8 +51,8 @@ export default function SideNav(props){
         const localData = localDataStr ? JSON.parse(localDataStr) : null
 
         props.setIsDeleting(true)
-        //const result = await deleteUserProfile(documentId)
-        const result = await deleteAllOtherProfiles()
+        const result = await deleteUserProfile(documentId)
+        //const result = await deleteAllOtherProfiles()
        if(typeof result === "string" && result.startsWith("error")){
             //setErr(result)
             props.setIsDeleting(false)
