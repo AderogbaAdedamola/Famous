@@ -52,7 +52,7 @@ const SingleUserProfile = ({ SingleUserData, setShowMainPage, setShowProfileSett
             <div className="profile-details">
               <h2 className="profile-name">{SingleUserData.name}</h2>
               <span className="profile-role">{SingleUserData.role || "User"}</span>
-              <p className="profile-email">{"aderogbaadedamola8@gmail.com"}</p>
+              {/* <p className="profile-email">{"aderogbaadedamola8@gmail.com"}</p>*/}
             </div>
             {isUser &&
             <button 
